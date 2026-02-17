@@ -1,0 +1,1 @@
+Always write code and comments in English. Use modern Python 3.11+ patterns. For PDF generation, use the fpdf2 library. When I ask for a feature, use the Composer (Ctrl+I) to implement it across all necessary files. Be concise.

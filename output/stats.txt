@@ -1,0 +1,63 @@
+--- JÁDRA (CORES) [30] ---
+- Airi
+- Akari
+- Anna
+- Ayumi
+- Chiharu
+- Haruka
+- Hiko
+- Ikai
+- Itsuki
+- Kaoru
+- Kaya
+- Kei
+- Kenzo
+- Makoto
+- Mimi
+- Mizuki
+- Mushashi
+- Nozomi
+- Raiji
+- Ren
+- Ryo
+- Saya
+- Setsuko
+- Shigen
+- Shiho
+- Tetsuya
+- Tomoe
+- Yoshika
+- Yuri
+- Yusuke
+
+--- PŮVODY (ORIGINS) [6] ---
+- Cizí
+- Enka
+- Místní
+- Sakuka
+- Shōka
+- Vedlejší
+
+--- SPECIALIZACE [6] ---
+- Cizí
+- Enka
+- Místní
+- Sakuka
+- Shōka
+- Vedlejší
+
+--- JEDNOTKY (UNITS) [5] ---
+Hagakure (0 rolí):
+Murakami (0 rolí):
+Sūpāsutā (0 rolí):
+Utsuro (0 rolí):
+V.I.R.A. (0 rolí):
+
+--- KRUHY (CIRCLES) [6] ---
+JPop (0 rolí):
+Kaligrafie (0 rolí):
+Literární klub (0 rolí):
+Rituální kruh (0 rolí):
+Sportovní kruh (0 rolí):
+Vědecký kruh (0 rolí):
+

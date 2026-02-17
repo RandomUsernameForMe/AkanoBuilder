@@ -1,0 +1,155 @@
+Technická specifikace: LARP Character Generator (v1.2)
+
+1. Přehled systému
+
+Cílem je vytvořit Python skript, který automatizuje tvorbu herních materiálů pro 30 postav. Program procesuje tabulková data a skládá je s textovými knihovnami do finálních Markdown dokumentů.
+
+2. Architektura souborů
+
+2.1 Vstupní složka (/inputs)
+
+characters.csv: Hlavní definiční tabulka (UTF-8, delimiter ,).
+
+cores.md: Texty osobních příběhů (30 sekcí).
+
+origins.md: Texty o původech (3 sekce).
+
+circles.md: Texty o zájmových kruzích a rolích v nich.
+
+units.md: Texty o jednotkách a rolích v nich.
+
+specializations.md: Texty o specializacích (3 sekce).
+
+2.2 Výstupní složka (/output)
+
+Složka obsahující 30 individuálních souborů ve formátu [Jméno_Postavy].md.
+
+3. Detailní popis datových struktur
+
+3.1 CSV Formát (characters.csv)
+
+Sloupec
+
+Příklad
+
+Význam
+
+name
+
+Jan Novák
+
+Jméno postavy a základ názvu souboru.
+
+core_id
+
+Core_01
+
+Klíč pro vyhledání v cores.md.
+
+origin_id
+
+Horalé
+
+Klíč pro vyhledání v origins.md.
+
+circle_role
+
+Kruh A:Diplomat
+
+Klíč ve formátu H1:H2 pro circles.md.
+
+unit_role
+
+Jednotka B:Kapitán
+
+Klíč ve formátu H1:H2 pro units.md.
+
+gender
+
+M / F
+
+Pohlaví postavy.
+
+specialization
+
+Bojovník
+
+Klíč pro vyhledání v specializations.md.
+
+3.2 Formát textových knihoven (Markdown)
+
+H1 (#): Kategorie.
+
+H2 (##): Konkrétní role/podsekce.
+
+Obsah: Veškerý text (včetně případných odrážek nebo tučného písma) až k dalšímu nadpisu stejné nebo vyšší úrovně.
+
+Pojistka: Pokud text pod nadpisem obsahuje další pod-nadpisy (H3+), jsou považovány za součást textu dané sekce.
+
+4. Algoritmus a logika zpracování
+
+4.1 Fáze parsování (Parsing)
+
+Markdown-to-Dict: Skript převede každý .md soubor na objekt typu:
+{ "H1_Title": { "H2_Title": "Content text...", "__ROOT__": "Content directly under H1..." } }
+
+CSV-to-List: Načtení řádků tabulky.
+
+4.2 Fáze mapování (Mapping)
+
+U složených klíčů (H1:H2) program rozdělí string podle první dvojtečky.
+
+Pokud v CSV buňce chybí dvojtečka, program hledá text v __ROOT__ (přímo pod H1).
+
+4.3 Fáze generování (Assembly)
+
+Skript sestaví Markdown podle šablony. Pokud klíč neexistuje, nahradí jej řetězcem [MISSING: {key_name}] a vypíše varování do konzole.
+
+5. Výstupní šablona (Template)
+
+# [name]
+**Původ:** [origin_id] | **Specializace:** [specialization] | **Gender:** [gender]
+
+---
+
+## Osobní historie
+[text z cores.md]
+
+## Původ: [origin_id]
+[text z origins.md]
+
+## Příslušnost k jednotce: [H1 z unit_role]
+**Role:** [H2 z unit_role]
+[text z units.md]
+
+## Zájmový kruh: [H1 z circle_role]
+**Postavení:** [H2 z circle_role]
+[text z circles.md]
+
+## Specializace: [specialization]
+[text z specializations.md]
+
+
+6. Technické a implementační požadavky
+
+Language & Style: Python 3.10+. Code and comments must be in English.
+
+Encoding: Všechny soubory čteny i psány v utf-8.
+
+File Naming: Názvy souborů budou sanitizovány (odstranění diakritiky, nahrazení mezer podtržítky, odstranění nepovolených znaků).
+
+Directory Management: Skript automaticky vytvoří složku /output, pokud neexistuje.
+
+Error Handling: Pokud chybí vstupní soubor, skript se ukončí s jasnou chybovou hláškou.
+
+Logging: Detailní výpis do konzole:
+
+"Parsing circles.md... Done (found 5 circles, 12 roles)"
+
+"Processing Jan Novak... Done"
+
+7. Budoucí rozšíření
+
+Integrace LLM pro automatické úpravy gramatického rodu (gender-swap).
+
+Možnost definovat delimiter CSV (, vs ;) v argumentech skriptu.

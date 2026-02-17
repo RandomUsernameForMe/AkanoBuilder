@@ -1,0 +1,6 @@
+[project]
+name = "AkanoBuider"
+version = "0.1.0"
+
+[tool.setuptools]
+py-modules = ["generator", "utils", "gdrive_client", "md_to_pdf", "cleanup", "convert_html_to_md"]

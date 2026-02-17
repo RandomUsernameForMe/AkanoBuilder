@@ -1,0 +1,85 @@
+/* Nastavení stránky pro PDF */
+@page {
+    size: A4;
+    margin: 2.5cm; /* Okraje stránky */
+    
+    /* Číslování stránek dole uprostřed */
+    @bottom-center {
+        content: counter(page);
+        font-family: sans-serif;
+        font-size: 9pt;
+        color: #888;
+    }
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Nadpis postavy (H1 v Markdownu) */
+h1 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #2c3e50; /* Tmavě modrá */
+    font-size: 24pt;
+    border-bottom: 3px solid #e74c3c; /* Červená linka */
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Sekce (H2 v Markdownu - např. Osobní historie) */
+h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #e74c3c; /* Červená */
+    font-size: 16pt;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2c3e50; /* Modrý proužek vlevo */
+    padding-left: 10px;
+    page-break-after: avoid; /* Zabraňuje zalomení stránky hned za nadpisem */
+}
+
+/* Podsekce (H3) */
+h3 {
+    color: #2c3e50;
+    font-size: 13pt;
+    margin-top: 20px;
+    font-weight: bold;
+    page-break-after: avoid;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify; /* Zarovnání do bloku */
+}
+
+/* Oddělovač (--- v Markdownu) */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 30px 0;
+}
+
+/* Tučný text (např. Původ: ...) */
+strong {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Seznamy */
+ul {
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.footer-web {
+    display: none;
+}
