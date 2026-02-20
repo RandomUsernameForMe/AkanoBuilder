@@ -94,12 +94,25 @@ def inject_references(text: str, category: str, registry: Dict[str, Dict[str, st
     
     return text
 
-def generate_stats_report(output_dir: str, cores_lib: Dict, origins_lib: Dict, units_lib: Dict, circles_lib: Dict, specs_lib: Dict):
+def generate_stats_report(output_dir: str, cores_lib: Dict, origins_lib: Dict, units_lib: Dict, circles_lib: Dict, specs_lib: Dict, team_registry: Dict[str, str]):
     report_path = os.path.join(output_dir, "stats.txt")
     with open(report_path, 'w', encoding='utf-8') as f:
         f.write(f"--- JÁDRA (CORES) [{len(cores_lib)}] ---\n")
         for key in sorted(cores_lib.keys()):
             f.write(f"- {key}\n")
+        f.write("\n")
+
+        team_counts = {}
+        for team in team_registry.values():
+            team_counts[team] = team_counts.get(team, 0) + 1
+
+        f.write(f"--- TÝMY (TEAMS) [{len(team_counts)}] ---\n")
+        EXPECTED_SIZE = 3
+        for team, count in sorted(team_counts.items()):
+            warning = ""
+            if count != EXPECTED_SIZE and team != "Neznámý":
+                warning = f" [!] POZOR: Očekáváno {EXPECTED_SIZE}"
+            f.write(f"{team}: {count}{warning}\n")
         f.write("\n")
 
         f.write(f"--- PŮVODY (ORIGINS) [{len(origins_lib)}] ---\n")
@@ -236,7 +249,7 @@ def main():
         print(f"Done -> {os.path.join(OUTPUT_DIR, utils.sanitize_filename(name))}.md")
 
     # Generate statistics report
-    generate_stats_report(OUTPUT_DIR, cores_lib, origins_lib, units_lib, circles_lib, specs_lib)
+    generate_stats_report(OUTPUT_DIR, cores_lib, origins_lib, units_lib, circles_lib, specs_lib, team_registry)
 
 if __name__ == "__main__":
     main()

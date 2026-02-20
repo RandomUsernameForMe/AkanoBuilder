@@ -1,30 +1,18 @@
-Toto je soubor se všemi popisy týmů + jader. Bude čtený programem, proto je potřeba dodržovat nějaká pravidla aby věci fungovaly  
+Toto je soubor se všemi popisy týmů + jader.  
   
-1) Název týmu musí být Nadpis 1 a obsahovat slovo “Tým”
+Název týmu MUSÍ být Nadpis 1.
 
-2\) Název jádra musí být Nadpis 1. Ať obsahuje jméno postavy a v závorce přezdívku.
+Název jádra MUSÍ být Nadpis 1.
 
-3\) Nic jiného nesmí být Nadpis 1.
+jakýkoli text, který nechcete v dokumentech pro hráče, MUSÍ být v html komentářích
 
-4\) Jakýkoli text, který nechcete v dokumentech pro hráče (třeba nějaké autorské poznámky nebo informace které nemá hráč dostat), umístěte mezi takto dvě trojice pomlček. Tomu budeme říkat *komentář*.
+---
 
-5\) Hráč dostane všechen text, který bude v záložce jádra a nebude komentář.
+toto je komentář
 
-6\) Hráč dostane všechen text, který bude v záložce jeho týmu a nebude komentář (tento text bude mít v postavě za textem jádra)  
-  
-Příklad komentáře:
+---
 
-*---*
-
-*toto je komentář který se nepropíše do hráčských dokumentů*
-
-*toto taky*
-
-*už chci přestat komentářovat, tak napíšu další trojici pomlček*
-
-*---*
-
-(Tato úvodní stránka, ironicky, je výjimka z pravidla o komentářích, ta se nepropíše nikam)
+Tato úvodní stránka, ironicky, je výjimka.
 
 Tým 1 - Kočky
 
@@ -222,7 +210,7 @@ C004 Kaya
 
 *Témata: rodina, povinnost, útěk, skryté dědictví, láska, vzdor*
 
-*---*
+---
 
 Kaya je dlouho vyprošovaná dcera váženého ale upadajícího rodu, o kterém se říká že je jedním z rodů císařské krve. Krásná, silná sofistikovaná žena, která je také jednou z premiantek na Akademii. A má pro to moc dobrý důvod.
 
@@ -281,7 +269,7 @@ C005 Kaoru
   
 Témata: velká lež, zákeřnost, překlenutí v přátelství, odpuštění*
 
---
+---
 
 Kaoru je chlapec z no name chudé zadlužené rodiny, který dostal v jednu chvíli nabídku na úkol, který dostane jeho rodinu z problémů.
 
@@ -367,7 +355,7 @@ C006 Hiko
 
 *Témata: skryté dědictví, pomocník, zodpovědnost, velká láska, princezna a chuďas, zakázaná láska*
 
-*---*
+---
 
 Hiko bylo služebníkem princezny Kayil. Jeho rodina je rodina sloužící jejímu rodu od nepaměti. Vždy s nimi bylo zacházeno slušně, měli respekt, dobrý plat a zajištění bezpečí a dobrého života.
 
@@ -379,7 +367,7 @@ V jednu chvíli se zdálo, že rodiče Kayi na ní tlačí ohledně nápadníků
   
 Kaya byla z tlaku rodiny tak otrávena, že pomocí Kaoru utekla z domu a vzala Hika s sebou. Všichni tři tak putovali zemí, a dostali se až na akademii, kde jim Kaoru zajistil falešné identity.
 
----
+***
 
 Teď studují a tvoří tým. Hiko a Kaya se postupně více sbližují, Hiko se cítí ohrožený Kaoru i jinými chlapci ze školy.
 
@@ -507,7 +495,7 @@ C007 Ikai
 
 *“**Vůdkyně** je dostala velikou zodpovědnost, když byla vyslána stát se lovykní. Sama, daleko od domova, jenom se svými nejbližími, bude na ní aby dokázala v sob i v ostatní udžet odhodlání dojít až nak onec cesty, i když bude muset jít za hranu svého přesvdčení. Ale je to všecho pro lepší dobro. že? ”*
 
-*---*
+---
 
 Nejdůležitější vlastností ikai je, že to není její skutečné jméno. Je ve škole pod skrytou identitou.
 
@@ -523,7 +511,7 @@ V Akademii byli ve všem trochu oproti vrstevníkům napřed, takže si mohli ro
 
 Viktoria a Kristof jsou obě cizácké krve, zaítmco Erika je místní krev, protože její rodina jsou uprchlíci ze Shin Junkinu.
 
----
+***
 
 Jsem za aby to byly postavy ktzerý jsou fixní, tedy mají přiřazenou jednotku i kruhy fixně. Velmi to sedí do věcí nastavených o modifikovaných dětech.
 
@@ -551,7 +539,7 @@ V jakých budou kruzích? menší otázka
 
 Navzdory tomu všemu co jim stojí v cestě chci aby to byla skupina která má velmi realistickou šanci se stát lovci.
 
----
+***
 
 C008 Raiji
 
@@ -575,7 +563,7 @@ Viktoria (Ikai) je kapitánkou skupiny, Erika (Airi) je její zástupkyní a Kri
 
 Viktoria a Kristof jsou obě cizácké krve, zatímco Erika je místní krev, protože její rodina jsou uprchlíci ze Shin Junkinu.
 
----
+***
 
 Jsem za aby to byly postavy který jsou fixní, tedy mají přiřazenou jednotku i kruhy fixně. Velmi to sedí do věcí nastavených o modifikovaných dětech.
 
@@ -601,7 +589,7 @@ V jakých budou kruzích? menší otázka
 
 Navzdory tomu všemu co jim stojí v cestě chci aby to byla skupina která má velmi realistickou šanci se stát lovci.
 
----
+***
 
 C009 Airi
 
@@ -625,7 +613,7 @@ Viktoria (Ikai) je kapitánkou skupiny, Erika (Airi) je její zástupkyní a Kri
 
 Viktoria a Kristof jsou obě cizácké krve, zatímco Erika je místní krev, protože její rodina jsou uprchlíci ze Shin Junkinu.
 
----
+***
 
 Jsem za aby to byly postavy který jsou fixní, tedy mají přiřazenou jednotku i kruhy fixně. Velmi to sedí do věcí nastavených o modifikovaných dětech.
 
@@ -651,7 +639,7 @@ V jakých budou kruzích? menší otázka
 
 Navzdory tomu všemu co jim stojí v cestě chci aby to byla skupina která má velmi realistickou šanci se stát lovci.
 
----
+***
 
 Tým 4 - Sirotci
 
@@ -875,7 +863,7 @@ C012 Ren
 
 # Ren (“Nezlomný”)
 
-*---*
+---
 
 *“ ”Nemusíš se bát. Já tě nezabiju. Ty mě asi chceš zabít, a až toho budeš schopen, uděláš to. Teď tě dovedu do bezpečí. Až budeš starší, staneš se Lovcem a najdeš si mě.” To si poslech **Nezlomný**, když našel člověka skrčeného nad svými mrtvými rodiči. Tehdy byl slabý a nezmohl nic. Ale stane se Lovcem, najde si ho, a zabije ho.”*
 
@@ -1078,11 +1066,11 @@ C014 Itsuki
 
 # **Itsuki**
 
-**---**
+---
 
 *“**Ten druhý**, který vyrůstal po boku silnějšího a cílevědomějšího přítele. Až teď, když mají ostré zbraně a jde o skutečné životy a lidi umírají, jakoby až teď v sobě dokázal najít silu se vzepřít tomu, co říkají ostatní. Konečně v sobě nachází dostatek odvahy a síly, aby se postavil za sebe a nenechal se jenom chrátit. Oni neví čím si prošel, a chtějí mu jenom šlapat po štěstí. Ale nikdy víc.”*
 
-## Historie
+# Historie
 
 ---
 
@@ -1092,7 +1080,7 @@ Na akademii Akano potkali Hinu, kterou jim přiřadili do týmu. Její přítomn
 
 Itsuki ji měl rád s první platonickou láskou, jakou kluk může cítit. Ale víc než cokoliv jiného ji obdivoval – její sílu a odhodlání. Často spolu mluvili o tom, jak se stanou lovci a budou chránit všechny, kdo se sami chránit nedokážou. Pro Itsukiho to nebyly prázdné sny. Už tehdy věděl, jaké je to být slabý a jaké je t nemoci ochránit lidé které ochránit chceš – jeho prarodiče byly zavražděny a sežrány lidozřevými monstry. On si slíbil, že až vyroste, ochrání všechny, a zabije všechna monstra.
 
-## Bolest
+# Bolest
 
 Na první skutečné misi byli všichni tři raněni – Tetsuya vážně, Hina také. Itsuki měl jen okamžik na rozhodnutí. Hina ho přitom ujišťovala, že to bude dobré, a prosila, ať se postará o Tetsuyu. Její slova slyší pořád. Pomohl svému kamarádovi a přežil. Hina už ne.
 
@@ -1100,7 +1088,7 @@ Od té chvíle se všechno změnilo. Itsuki zachránil život – a přitom nech
 
 Po Hině přišla Akari. Byla převelena z jiného bloku prjektu Akano3, protože její tým se rozpadl. Přinesla do jejich dvojice znovu třetí hlas, smích a zvědavost. Itsuki v ní našel něco, co mu Hinu připomínalo, a přitom víc – tentokrát se necítil jen jako kluk, který obdivuje, ale jako člověk, který i přes bolest a ztrátu vyrostl a je připravený. Akari to viděla a vážila si toho.
 
-## Po letech
+# Po letech
 
 Už je to roky, co je Hina mrtvá. Itsuki se naučil žít se vzpomínkou na ni, ale nikdy na ni nezapomněl. S Tetsuyou zůstali blízcí přátelé, i když bez Hiny se jejich cesty trochu vzdalují. Přátelství je pořád silné, ale bez Hininých slov, bez její přítomnosti už není stejné.
 
@@ -1110,7 +1098,7 @@ Ještě jí neřekl nic o hloubce svých citů. Plánuje ji pozvat na ples. Snad
 
 Snad to tým a Tetsuya zvládne. Ale Itsuki si také zaslouží svoje štěstí,
 
-## Cíle
+# Cíle
 
 - **Být s Akari**. Najít odvahu jí přiznat, co k ní cítí, a přijmout, pokud mu vyzná totéž.
 
@@ -1136,7 +1124,7 @@ Smysl lišky je být mezi lidmi. Prožívat jejich životy, jejich emoce, jejich
 
 Když byla Akari převelena do bloku k Tetsuyovi a Itsukimu, věděla, že vstupuje do zlomeného příběhu. Její vlastní tým se rozpadl – její dva parťáci byli zabiti a zůstala sama. Rychle pochopila, co se jim stalo: že jim chybí třetí, Hina, a že ta bolest je pořád živá. Nechtěla ji nahradit. Ale chtěla tam být.
 
-## Bolest
+# Bolest
 
 Ve vzpomínkách Tetsuyi a Itsukiho poznala Hinu. Ví z jejich vzpomínek, jak ji vnímali – jako krásnou, čistou, správnou bytost která žila v pravdě. Pamatuje si květ, který nosila ve vlasech. Brali ji skoro jako urozenou, jako bohyni, ale přesto pořád člověka, se svými slabostmi, třeba že nakonec nedokázala ovládnout svoje srdce a měla blíž k Tetsuyovi než k Itsukimu. Akari Hinu nikdy nepotkala, a přece ji zná a baví ji více poznávat ze vzpomínek obou chlapců. Baví ji poznávat nejen její éterickou stránku jak jí uctívali, ale tak její lidskost a nedostatky, se kterými bojovala. Naučila se ji mít ráda.
 
@@ -1144,7 +1132,7 @@ Občas chodí v noci k Tetsuyovi a vkládá mu do hlavy sny, v nichž jsou znovu
 
 Itsukiho má Akari opravdu ráda. Vidí v něm lásku a vůli, která je jiná než Tetsuyova – ne tvrdost, ale odvahu chránit slabší. Vidí, že už není ten kluk, kterému se smáli, ale člověk, který vyrostl. A jeho lásku k ní přijímá jako něco, co je skutečné. Ví, jak se cítil k Hině a proto ví, že to co říká jí a co cítí je skutečné.
 
-## Po letech
+# Po letech
 
 Už to jsou roky, co se stala součástí jejich týmu. Smála se s nimi, chodila do hodin, seděla s nimi v jídelně, sdílela s nimi obyčejný život. To všechno pro ni bylo vzácnější než cokoliv, co kdy měla.
 
@@ -1455,7 +1443,7 @@ C021 Anna
 
 # Anna 
 
-**---**
+---
 
 **Kódové jméno:** Aquila (Zástupce kapitána / Bystré oko) **Jednotka:** Hvězdy (Sūpāsutā)
 
@@ -1469,7 +1457,7 @@ C021 Anna
 
 **Vztah k Hvězdám:** V týmu hraje roli Aquily, zástupce Oriona. Chtěla by se stát i kapitánkou, ale nejistota i její původ ji brzdí, přestože ví, že na to má. Ona jako Anna má Shiho moc ráda, ale Aquila nenávidí Oriona a chce ho nahradit, protože to škodí jednotce. Anna byla svědkyní toho, kdy Yusukeho Inugami zabil bratra Shiho, a tak páky na Yusukeho.
 
-**---**
+---
 
 **Co bude řešit na hře:**
 
@@ -1547,7 +1535,7 @@ C022 Kei
 
 # Kei (“nejstarší”)
 
-**---**
+---
 
 **Archetyp:** Dědic **Dominantní vlastnost:** Chladnost a brutalita
 
@@ -1575,7 +1563,7 @@ C023 Ryo
 
 # Ryo (“Prostřední”)
 
-**---**
+---
 
 **Archetyp:** Zlaté dítě s tajemstvím / Informační broker **Dominantní vlastnost:** Marnivost a přetvářka
 
@@ -1721,7 +1709,7 @@ V minulosti za pomocí technicky nadané kamarádky Chiharu sehnal a nainstalova
 
 **Časování**
 
-C028 Kenzo
+Kenzo
 
 # Kenzo
 
@@ -1741,7 +1729,7 @@ C028 Kenzo
 
 - Před incidentem do něj byl zamilovaný Chiharu, a on do něj vlastně taky, ale nikdy se to nerozvinulo. Teď je Kenzo zmatený, protože neví jestli je do něj pořád zamilovaný nebo je to jen součástí pocitu viny
 
-C029 Makoto
+Makoto
 
 # Makoto
 
@@ -1761,7 +1749,7 @@ C029 Makoto
 
 - V nedávné minulosti - někdo obvinil Makota, že když nemá hlavu, tak je monstrum. Ředitel řekl, že toto se neřeší, že monstrum není. Vyrábí jim to nenávist
 
-C030 Chiharu
+Chiharu
 
 # Chiharu
 
