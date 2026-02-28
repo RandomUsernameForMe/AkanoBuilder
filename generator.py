@@ -6,8 +6,11 @@ import shutil
 import sys
 from typing import Dict, Any
 
+from dotenv import load_dotenv
 import gdrive_client
 import utils
+
+load_dotenv()
 
 # Configuration
 INPUT_DIR = "inputs"
@@ -22,15 +25,14 @@ FILES = {
 }
 
 # GOOGLE DRIVE CONFIGURATION
-# Fill in the IDs from your Google Docs/Sheets URLs.
-# If None, the script will use local files.
+# Set IDs in a .env file (see .env.example). If None, local files are used.
 GDOC_IDS = {
-    "csv": None,            # e.g., "1BxiM-..."
-    "cores": "GDOC_ID_REMOVED",
-    "origins": "GDOC_ID_REMOVED",
-    "circles": "GDOC_ID_REMOVED",
-    "units": "GDOC_ID_REMOVED",
-    "specializations": "GDOC_ID_REMOVED"
+    "csv":             os.environ.get("GDOC_CSV"),
+    "cores":           os.environ.get("GDOC_CORES"),
+    "origins":         os.environ.get("GDOC_ORIGINS"),
+    "circles":         os.environ.get("GDOC_CIRCLES"),
+    "units":           os.environ.get("GDOC_UNITS"),
+    "specializations": os.environ.get("GDOC_SPECIALIZATIONS"),
 }
 
 def build_team_registry(cores_lib: Dict[str, Any]) -> Dict[str, str]:

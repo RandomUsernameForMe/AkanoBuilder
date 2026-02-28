@@ -49,8 +49,7 @@ def parse_markdown(file_path: str) -> Dict[str, Any]:
     Structure: { "H1": { "H2": "content", "__ROOT__": "content" } }
     """
     if not os.path.exists(file_path):
-        print(f"Error: File {file_path} not found.")
-        sys.exit(1)
+        raise FileNotFoundError(f"File {file_path} not found.")
 
     print(f"Parsing {os.path.basename(file_path)}...", end=" ")
 

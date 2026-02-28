@@ -4,3 +4,4 @@ __pycache__/
 inputs/*.md
 inputs/*.docx
 output/
+.env
