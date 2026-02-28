@@ -18,11 +18,11 @@ def validate_download(file_path: str, is_sheet: bool) -> bool:
 
         if is_sheet:
             # CSV Check
+            with open(file_path, 'r', encoding='utf-8-sig') as f:
+                content = f.read()
             if not content.strip():
                 print(f"\n [!] Error: {os.path.basename(file_path)} is empty.")
                 return False
-            with open(file_path, 'r', encoding='utf-8-sig') as f:
-                content = f.read()
             if ',' not in content.splitlines()[0]:
                 print(f"\n [!] Error: {os.path.basename(file_path)} does not look like a valid CSV (no commas in header).")
                 return False

@@ -91,5 +91,5 @@ def convert_file(filepath):
 
 if __name__ == "__main__":
     for filename in os.listdir(INPUT_DIR):
-        if filename.endswith(".md"):
+        if filename.endswith(".html"):
             convert_file(os.path.join(INPUT_DIR, filename))

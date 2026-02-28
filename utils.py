@@ -99,7 +99,7 @@ def parse_markdown(file_path: str) -> Dict[str, Any]:
         # Check for H1
         if line.startswith("# "):
             flush_buffer()
-            raw_h1 = line.strip("# ").strip()
+            raw_h1 = line.lstrip("# ").rstrip()
             # Normalize H1: remove text in parentheses and prefixes like C001, S001
             current_h1 = re.sub(r'\s*\(.*?\)', '', raw_h1)
             current_h1 = re.sub(r'^[CS]\d+\s+', '', current_h1).strip()
@@ -113,7 +113,7 @@ def parse_markdown(file_path: str) -> Dict[str, Any]:
         # Check for H2
         elif line.startswith("## "):
             flush_buffer()
-            raw_h2 = line.strip("## ").strip()
+            raw_h2 = line.lstrip("# ").rstrip()
             current_h2 = re.sub(r'\s*\(.*?\)', '', raw_h2)
             current_h2 = re.sub(r'^[CS]\d+\s+', '', current_h2).strip()
         # Content (including H3+)

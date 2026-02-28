@@ -1,0 +1,4 @@
+requests
+markdown
+jinja2
+weasyprint
